@@ -1,0 +1,133 @@
+:root {
+  --Pale-blue: hsl(225, 100%, 94%);
+  --Bright-blue: hsl(245, 75%, 52%);
+  --Very-pale-blue: hsl(225, 100%, 98%);
+  --Desaturated-blue: hsl(224, 23%, 55%);
+  --Dark-blue: hsl(223, 47%, 23%);
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 16px;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+}
+
+body {
+  background-color: var(--Pale-blue);
+  font-family: 'Red Hat Display', sans-serif;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  background-color: var(--Very-pale-blue);
+  width: 400px;
+  height: auto;
+  border-radius: 15px;
+}
+
+.card img {
+  width: 400px;
+  border-radius: 15px 15px 0 0;
+}
+
+.card .card-plan>img {
+  width: 40px;
+  position: absolute;
+  top: 28%;
+  left: 5%;
+}
+
+.card-title {
+  font-size: 1.5rem;
+  color: var(--Dark-blue);
+  padding-top: 32px;
+  padding-bottom: 20px;
+  text-align: center;
+  font-weight: bold;
+}
+
+.card-description {
+  color: var(--Desaturated-blue);
+  line-height: 1.5rem;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.card-plan {
+  border: thin solid hsla(225, 100%, 94%, 0.30);
+  background-color: hsla(225, 100%, 94%, 0.15);
+  border-radius: 10px;
+  height: 90px;
+  width: 325px;
+  position: relative;
+}
+
+.word-style {
+  color: var(--Dark-blue);
+  font-weight: bold;
+  padding-left: 15px;
+  position: absolute;
+  top: 25%;
+  left: 17%;
+}
+
+.word-style-2 {
+  color: var(--Bright-blue);
+  text-decoration: underline;
+  font-weight: bold;
+  font-size: 0.8rem;
+  position: absolute;
+  top: 40%;
+  left: 78%;
+}
+
+.price-style {
+  color: hsl(224, 23%, 55%);
+  padding-left: 57px;
+  position: absolute;
+  top: 50%;
+  left: 4%;
+}
+
+.btn-style-1 {
+  color: var(--Very-pale-blue);
+  background-color: var(--Bright-blue);
+  width: 325px;
+  padding: 10px;
+  border-radius: 10px;
+  text-align: center;
+  margin-top: 26px;
+  box-shadow: 0px 10px 10px 1px var(--Pale-blue);
+}
+
+.word-style-3 {
+  color: var(--Desaturated-blue);
+  font-weight: bold;
+  margin-top: 23px;
+  margin-bottom: 25px;
+}
+
+.word-style-2:hover,
+.btn-style-1:hover,
+.word-style-3:hover {
+  cursor: pointer;
+}
+
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
